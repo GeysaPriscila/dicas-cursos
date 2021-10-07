@@ -127,6 +127,8 @@
                       <button
                         type="button"
                         class="btn btn-sm btn-outline-secondary"
+                        data-url="http://google.com"
+                        onclick="openLink(this)"
                       >
                         View
                       </button>
@@ -363,6 +365,7 @@
                       <button
                         type="button"
                         class="btn btn-sm btn-outline-secondary"
+
                       >
                         View
                       </button>
@@ -542,5 +545,10 @@
     </footer>
 
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function openLink(element) {
+        window.open(element.dataset.url, '_blank');
+      }
+    </script>
   </body>
 </html>
